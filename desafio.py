@@ -71,7 +71,7 @@ def cadastrarUsuario():
     cpf = str(input("Informe o cpf: "))
     nascimento = str(input("Informe a data de nascimento: "))
     endereco = str(input("Informe o endereço: "))
-    novo_cliete=(nome,cpf,nascimento,endereco)
+    novo_cliete=("nome":nome,"cpf":cpf,"nascimento":nascimento,"endereco":endereco)
     print(novo_cliete)
     global clientes
     
@@ -94,7 +94,7 @@ def cadastrarContaCorrente():
     for cliente in clientes:
         if cpf1  in cliente:
             conta=conta+1
-            contas.append((agencia,cpf1,conta))
+            contas.append(("agencia":agencia,"cpf1":cpf1,"conta":conta))
             return contas
 
               
