@@ -110,8 +110,6 @@ while True:
 
         valor = float(input("Informe o valor do depósito: "))
         deposito(valor,extrato)
-        cadastrarContaCorrente()
-        print (contas)
 
         
         
@@ -124,8 +122,6 @@ while True:
 
     elif opcao == "e":
         extrato(saldo,extrato=extrato)
-        cadastrarUsuario()
-        print (clientes)
         
         
 
